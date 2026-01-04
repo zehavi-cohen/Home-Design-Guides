@@ -1,0 +1,277 @@
+body{
+    direction: rtl;
+    height:100vh;
+    width: 100vw;
+    font-family: 'MyFont';
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: 100%;
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    margin-left: 30rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#message{
+    width: 100%;
+    height: 100vh;
+    margin-left: 30rem;
+    align-content: center;
+    text-align: center;
+
+}
+h2{
+     margin: 0;
+    font-size: 40rem;
+}
+p:nth-child(2){
+    font-size: 30rem;
+    margin: 0;
+}
+p:nth-child(3){
+    font-size: 25rem;
+    margin: 0;
+}
+
+#image{
+    width: 50%;
+    height: 100vh;
+    border-left: black 2rem solid;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+    align-items: center;
+}
+button label{
+    color: rgb(177, 162, 162);
+}
+label{
+
+    position: absolute;
+    font-size: 20rem;
+    margin: 10rem;
+}
+.div_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    font-size: 20rem;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    border: black 2rem solid;
+    border-radius: 4rem;
+}
+a,button{
+    border: none;
+    border-radius: 4rem;
+    height: 35rem;
+    width: 260rem;
+    margin: 5rem;   
+    padding: 0;
+    font-size: 20rem;
+text-decoration: none;}
+a{
+    display: block;
+    height: 35rem;
+    width: 260rem;
+    color: white;
+
+}
+#send{
+    width: 93%;
+    background-color:  rgb(241 211 154) ;
+    border: black 0.5rem solid;
+}
+.confirm{
+    display: flex;
+    flex-direction: row;
+    align-content:space-between ;
+    width: 35rem;
+    align-self: start;
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20rem;
+}
+.confirm label{
+    position: relative;
+    font-size: 15rem;
+    align-self: end;
+    width: 100%;
+    padding-top: 6px;
+}
+.confirm #confirm{
+    align-self: start;
+    width: 20rem;
+}
+#tips{
+    color: rgb(186 146 71) ;
+    font-size: 15rem;
+
+}
+#WriteTips
+{
+    position: absolute;
+    height: 500rem;
+    width: 500rem;
+    display: none;
+    flex-direction: column;
+}
+textarea{
+    font-family: 'MyFont';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(253 241 218);
+    align-self: center;
+    justify-self: center;
+    left: 50%;
+    color: black;
+    font-size: 20rem;
+    resize: none;
+}
+#OK{
+    width: 100%;
+    height: 50rem;
+
+}
+/* .confirm #confirm:checked{
+    background-color: white;
+} */
+@font-face {
+    font-family: "MyFont"; /* שם הפונט המותאם אישית */
+    src: url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff2"),
+         url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff");
+}
+@media (max-width:499px)
+{
+    html{
+        font-size: 0.55px;
+        width: 0.55px;
+        height: 0.55px;
+        padding: 0.55px;
+        margin: 0.55px;
+        box-shadow: 0.55px;
+        border-width: 0.55px;
+    }
+    body{
+        overflow-Y: scroll;
+
+    }
+
+    #form{
+        flex-direction: column; 
+    }
+    #image{
+        width: 100%;
+        margin-bottom: 20rem;
+
+    }
+    #text{
+        width: 100%;
+ 
+    }
+    #WriteTips
+{
+    height: 700rem;
+    width: 300rem;
+}
+
+}
+@media (max-width:767px) and (min-width:500px)
+{
+    html{
+        font-size: 0.7px;
+        width: 0.7px;
+        height: 0.7px;
+        padding: 0.7px;
+        margin: 0.7px;
+        box-shadow: 0.7px;
+        border-width: 0.7px;
+    }
+    body{
+        overflow-Y: scroll;
+
+    }
+    #form{
+        flex-direction: column; 
+    }
+    #image{
+        width: 100%;
+        margin-bottom: 20rem;
+    }
+    #text{
+        width: 100%;
+ 
+    }
+    #WriteTips
+{
+    height: 700rem;
+    width: 300rem;
+}
+
+
+} 
+@media (max-width:991px)and (min-width:768px)
+{
+    html{
+        font-size:0.7px;
+        width:0.76px;
+        height:0.76px;
+        padding:0.76px;
+        margin:0.76px;
+        box-shadow:0.76px;
+        border-width:0.76px;
+    }
+}
+
+@media (max-width:1500px)and (min-width:992px)
+{
+    html{
+        font-size: 0.9px;
+        width: 0.9px;
+        height: 0.9px;
+        padding: 0.9px;
+        margin: 0.9px;
+        box-shadow: 0.9px;
+        border-width: 0.9px;
+    
+    }
+}
+ @media (min-width:1500px)
+{
+    html{
+        font-size: 1px;
+        width: 1px;
+        height: 1px;
+        padding: 1px;
+        margin: 1px;
+        box-shadow: 1px;
+        border-width: 1px;
+    }
+}  

@@ -1,0 +1,309 @@
+a{
+    scroll-behavior: smooth; 
+}
+html{
+    --color: #cd972f;
+}
+body{
+    direction: rtl;
+    font-family: "MyFont";
+    height:100vh ;
+    width: 100vw;
+    padding:0;
+    overflow-x: hidden;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0;
+
+}
+hr{
+    color: #cd972f;
+
+}
+#bigTriangle {
+    display: none;
+    width: 0; /* רוחב המשולש */
+    height: 0; /* גובה המשולש */
+    border-left: 7rem solid transparent; /* חצי רוחב */
+    border-right: 7rem solid transparent; /* חצי רוחב */
+    border-bottom: 14rem solid #000000; /* צבע המשולש */
+    /* transition: transform 0.3s, opacity 0.3s; מעברים חלקים */
+    margin-bottom: -14rem;
+    /* transform: translateX(-357%); */
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+#smallTriangle {
+    position: absolute;
+    width: 0; /* רוחב המשולש */
+    height: 0; /* גובה המשולש */
+    border-left: 6.5rem solid transparent; /* חצי רוחב */
+    border-right: 6.5rem solid transparent; /* חצי רוחב */
+    border-bottom: 13rem solid #ffffff; /* צבע המשולש */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15rem;
+    z-index: 999;
+}
+header{
+    width: 100%;
+    position: fixed;
+    height: 60rem;
+    right: 0;
+    top:0;
+    /* position: sticky; */
+    z-index: 1000;
+
+}
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+background-color: white;
+border-bottom: black 2rem solid;
+border-top: black 2rem solid;
+height: 100%;
+}
+#hamburger{
+    display: none;
+}
+#hamburger img{
+    justify-self: center;
+    width: 50rem;
+    height: auto;
+}
+footer nav{
+    border-bottom: none;
+    background-color: rgb(248, 241, 228);
+    align-items: start;
+}
+.icon{
+    height: 20rem;
+    width: auto;
+    margin: 10rem;
+    right: 10%;
+}
+.menu{
+    color: var(--color);
+    font-weight: 500;
+    font-size: 20rem;
+    text-align: center;
+    align-content: center;
+    padding: 1rem;
+    position: relative; 
+    justify-items: center;
+    margin: -1rem;
+    transition: transform 0.2s 0s linear;
+}
+.menu:hover .dropdawn,.menu:hover #bigTriangle{
+    display: block; 
+}
+.menu:hover a:not(li a),footer .menu:hover{
+    color: #714b00;
+    font-size: larger;
+    /* transform: translateY(-10px); */
+}
+li a:hover{
+    color: var(--color);
+    /* --color: #cd972f;
+    color: var(--color); */
+
+}
+li a:hover img{
+    transform: scale(1.6);
+}
+.dropdawn:hover{
+    display: block; 
+}
+.dropdawn{
+    border: none;
+    /* top: 59rem; */
+    border-top-width: 6rem;
+    border-color: #000000;
+     top:100%;
+    position: absolute;
+    display: none;
+    z-index: 99999999999999999;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0s 2s linear;
+    /* width: 100vw; */
+}
+#mobMenu{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none; 
+    flex-direction: column;
+    text-align: right;
+    width: fit-content;
+    height: 100%;
+    margin: 0rem;
+    padding-left: 20rem;
+    padding-right: 10rem;
+    background-color: black;
+    gap:5rem;
+    font-size: 25rem;
+    /* border-right: black 5rem solid; */
+}
+#mobMenu li a{
+    color: rgb(248, 241, 228);
+}
+
+ul{
+    padding-right: 10rem;
+    padding-left: 10rem;
+    font-weight: normal;
+    font-size: 18rem;
+    width: max-content;
+    list-style: none;
+    text-align: center;
+    position: static;
+    border-top: black 2rem solid;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.big_img
+{
+      height: 100%;
+      background-image: url("/Images/BathRoom/0.jpg");    
+      background-position: center;
+      background-size: contain;
+      background-attachment: fixed;
+      text-align: start;
+}
+main{
+    height: 100%;
+    padding-top: 59rem; 
+
+}
+iframe{
+    top:0;
+    width: 100%;
+    height:100%;
+    /* scroll-snap-type: none; */
+}
+.span{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+footer{
+bottom: 0;
+width: 100%;
+font-size: 20rem;
+color: black;
+background-color: rgb(248, 241, 228);
+padding: 30rem;
+/* position: sticky;
+bottom: 0; */
+}
+footer a{
+    z-index: 1;
+}
+@font-face {
+    font-family: "MyFont"; /* שם הפונט המותאם אישית */
+    src: url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff2"),
+         url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff");
+}
+
+@media (max-width:499px)
+{
+    html{
+        font-size: 0.45px;
+        width: 0.55px;
+        height: 0.55px;
+        padding: 0.55px;
+        margin: 0.55px;
+        box-shadow: 0.55px;
+        border-width: 0.55px;
+    }
+    #hamburger{
+        z-index: 9999;
+        display: block;
+        position: fixed;
+
+        top:20rem;
+        right: 20rem;
+    }
+    header{
+        display: none;
+    }
+    main{
+        padding: 0;
+    }
+}
+@media (max-width:767px) and (min-width:500px)
+{
+    html{
+        font-size: 0.6px;
+        width: 0.7px;
+        height: 0.7px;
+        padding: 0.7px;
+        margin: 0.7px;
+        box-shadow: 0.7px;
+        border-width: 0.7px;
+    }
+    #hamburger{
+        z-index: 9999;
+        display: block;
+        position: fixed;
+        top:20rem;
+        right: 20rem;
+    }
+    header{
+        display: none;
+    }
+    main{
+        padding: 0;
+    }
+
+} 
+
+@media (max-width:991px)and (min-width:768px)
+{
+    html{
+        font-size:0.76px;
+        width:0.76px;
+        height:0.76px;
+        padding:0.76px;
+        margin:0.76px;
+        box-shadow:0.76px;
+        border-width:0.76px;
+    }
+}
+
+@media (max-width:1500px)and (min-width:992px)
+{
+    html{
+        font-size: 0.9px;
+        width: 0.9px;
+        height: 0.9px;
+        padding: 0.9px;
+        margin: 0.9px;
+        box-shadow: 0.9px;
+        border-width: 0.9px;
+    
+    }
+}
+ @media (min-width:1501px)
+{
+    html{
+        font-size: 1px;
+        width: 1px;
+        height: 1px;
+        padding: 1px;
+        margin: 1px;
+        box-shadow: 1px;
+        border-width: 1px;
+    }
+}  

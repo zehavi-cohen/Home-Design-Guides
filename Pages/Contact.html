@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="../Styles/ContactStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="form">
+        <div id="image">
+            <img src="../Images/16.jpg" />
+        </div>
+        <div id="text">
+            <h2>ברוכים הבאים!</h2>
+            <p>יש לנו עוד המון תוכן שאסור לכם לפספס!</p>
+            <p>הרשמו עכשיות וקבלו מנת תוכן יומית</p>
+            <div id="inputs">
+                <button class="div_input" id="i1">
+                    <!-- <label id="l_private_name" for="private_name">שם פרטי</label> -->
+                    <input placeholder="שם פרטי"  id="private_name" name="private_name" required placeholder="נא הזן שם פרטי" />
+                </button>
+                <button class="div_input" id="i2">
+                    <!-- <label id="l_last_name" for="last_name">שם משפחה</label> -->
+                    <input placeholder="שם משפחה"  id="last_name" name="last_name" required placeholder="נא הזן שם משפחה" />
+                </button>
+                <button class="div_input" id="i3">
+                    <!-- <label id="l_email" for="email">אימייל</label> -->
+                    <input type="email" placeholder="אימייל"  id="email" name="email" required placeholder="נא הזן כתובת מייל חוקית"/>
+                    <!-- <label id="validate_email" for="email">כתובת המייל אינה חוקית </label> -->
+
+                </button>
+                <button id="send"><a href="Confirm.html">שלח</a></button>
+                <div class="confirm" id="i4">                 
+                    <input type="checkbox" id="confirm" name="confirm" />
+                    <label id="l_confirm" for="confirm">אני מאשר/ת קבלת תוכן מערכתי ושיווקי</label>
+                </div>   
+                <button id="tips">יש לך טיפים לעיצוב והום- סטיילינג שחייבים להתפרסם?</button>
+            </div>
+        </div>
+    </div>
+    <div id="WriteTips">
+        <textarea placeholder="כתוב כאן את הטיפ שלך" name="tip" id="tip" ></textarea>
+        <button id="OK">OK</button>
+    </div>
+    <script>
+        const button = document.getElementById('tips');
+        const myElement4 = document.getElementById('WriteTips');
+        const myElement5 = document.getElementById('form');
+        const button1 = document.getElementById('OK');
+
+        button.addEventListener('click', () => {
+            if (myElement4.style.display === 'none' || myElement4.style.display === '') {
+                myElement5.style.opacity='0.2';
+                myElement4.style.display = 'flex'; // Show the element
+            } 
+        });
+            button1.addEventListener('click', () => {
+                myElement4.style.display = 'none'; // Hide the element
+                myElement5.style.opacity='1';
+        });
+
+    </script>
+
+</body>
+
+</html>

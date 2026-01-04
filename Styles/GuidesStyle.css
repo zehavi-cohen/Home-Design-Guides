@@ -1,0 +1,250 @@
+body{
+    direction: rtl;
+    /* background-color: linear-gradient(rgb(114, 78, 78), yellow); */
+    background-color:rgb(248, 241, 228);
+    display: block;
+    font-family: "MyFont";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    padding: 0;
+    box-sizing: content-box;
+    overflow-x: hidden; 
+    margin: 0;
+}
+
+#the_guides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.the_guides_img{
+    margin-top: 30rem;
+    height: 200rem;
+    width: auto;
+}
+#start{
+    font-size: 30rem;
+    text-align: center;
+    padding-left: 200rem;
+    padding-right: 200rem;
+    padding-top: 40rem;
+    font-weight: 500;
+}
+#start p{
+    font-size: 20rem;
+    font-weight:normal;
+
+}
+.BigTitle{
+    justify-content: center;
+    align-content: center;
+    width: 65%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+}
+.BigTitle p{
+    font-size: 30rem;
+    background-color: rgb(248, 241, 228);
+    margin: 0;
+    width: min-content;
+    text-wrap: nowrap;
+    margin: 10rem;
+    font-weight: 650;
+}
+.line {
+    align-self: center;
+    width: 100%;
+    height: 10rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: rgb(0, 0, 0) 1.5rem  solid;
+    margin-bottom:7rem;
+}
+.shelf{
+    background-color: white;
+    width: 260rem;
+    height: 30rem;
+    box-shadow: -16px 16px 20px 0px rgb(171 165 165 / 25%), -19px 20px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.img{
+    width: 220rem;
+    height: 220rem;
+}
+.vis_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.change_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.guides{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height :max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 75%;
+    row-gap:40rem ;
+    padding-top: 20rem;
+    padding-bottom: 30rem;
+}
+.card{
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+.card:hover .hid_text{
+      opacity: 1;
+}
+.hid_text{
+    background-color: white;
+    transition: opacity 0.3s 0s linear;
+    opacity: 0;
+    height: 280rem;
+    width: 200rem;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: 20rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap:20rem;
+}
+.title{
+    width: 220rem;
+    height: 60rem;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 20rem;
+    
+}
+.title p{
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 2rem;
+    margin: 0;
+}
+.text{
+    padding-bottom: 20rem;
+}
+a{
+    text-align: justify;
+    font-size: 20rem;
+    transition: font-size 0.1s 0s linear;
+    text-decoration: none;
+}
+a::after{
+    content: '←';
+}
+@font-face {
+    font-family: "MyFont"; /* שם הפונט המותאם אישית */
+    src: url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff2"),
+         url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff");
+}
+
+@media (max-width:499px)
+{
+    html{
+        font-size: 0.55px;
+        width: 0.55px;
+        height: 0.55px;
+        padding: 0.55px;
+        margin: 0.55px;
+        box-shadow: 0.55px;
+        border-width: 0.55px;
+    }
+    .shelf{
+        display: none;
+    }
+    .card{
+        margin: 25px;
+        transform: scale(1.3);
+    }
+    .guides{
+        row-gap:0 ;
+        width: 85%;
+
+    }
+}
+@media (max-width:767px) and (min-width:500px)
+{
+    html{
+        font-size: 0.7px;
+        width: 0.7px;
+        height: 0.7px;
+        padding: 0.7px;
+        margin: 0.7px;
+        box-shadow: 0.7px;
+        border-width: 0.7px;
+    }
+    .shelf{
+        display: none;
+    }
+    .card{
+        margin: 38px;
+        transform: scale(1.29);
+    }
+    .guides{
+        row-gap:0 ;
+        width: 90%;
+    }
+
+
+} 
+@media (max-width:991px)and (min-width:768px)
+{
+    html{
+        font-size:0.74px;
+        width:0.74px;
+        height:0.74px;
+        padding:0.74px;
+        margin:0.74px;
+        box-shadow:0.74px;
+        border-width:0.74px;
+    }
+}
+
+@media (max-width:1500px)and (min-width:992px)
+{
+    html{
+        font-size: 0.9px;
+        width: 0.9px;
+        height: 0.9px;
+        padding: 0.9px;
+        margin: 0.9px;
+        box-shadow: 0.9px;
+        border-width: 0.9px;
+    
+    }
+}
+ @media (min-width:1500px)
+{
+    html{
+        font-size: 1px;
+        width: 1px;
+        height: 1px;
+        padding: 1px;
+        margin: 1px;
+        box-shadow: 1px;
+        border-width: 1px;
+    }
+}  
+
+

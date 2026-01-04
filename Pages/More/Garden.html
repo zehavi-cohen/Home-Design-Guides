@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גינה</title>
+    <link href="../../Styles/StylePages.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+</head>
+
+<body>
+    <aside id="menu">
+        <div id="con_menu">
+            <a href="#i1">איך הכל התחיל</a>
+            <div class="line_between"> </div>
+            <a href="#i2">מאפייני עיצוב פרובנס </a>
+            <div class="line_between"> </div>
+            <a href="#i3"> חומרים בעיצוב פרובנס </a>
+            <div class="line_between"> </div>
+            <a href="#i4">גוונים בעיצוב פרובנס </a>
+            <div class="line_between"> </div>
+            <a href="#i5"> תאורה בעיצוב פרובנס</a>
+        </div>
+        <button id="head_menu">
+            תוכן עניינים
+        </button>
+        <script>
+            const button = document.getElementById('head_menu');
+            const myElement = document.getElementById('con_menu');
+            button.addEventListener('click', () => {
+                if (myElement.style.display === 'none' || myElement.style.display === '') {
+                    myElement.style.display = 'flex'; // Show the element
+                } else {
+                    myElement.style.display = 'none'; // Hide the element
+                }
+            });
+        </script>
+    </aside>
+    <div class="big_img" style="background-image: url(../../Images/Garden/00.jpg);">
+        <div class="title">
+            המדריך לעיצוב גינה
+            <p>
+                5 כללים שחייבים לדעת בתכנון גינה
+            </p>
+        </div>
+    </div>
+    <div id="spoiler">
+        <hr>
+        <p>
+            עיצוב גינה ביתית חייב להתחיל בתכנון מקדים, התכנון מורכב מכמה וכמה גורמים שבאמצעות ההתייחסות אליהם, הגינה
+            תפרח ותשגשג. רק אחרי שמודעים למבנה השטח שמיועד לגינה ומכשירים את הקרקע, אפשר לבחור את סגנון העיצוב המועדף,
+            ומה רוצים לגדל בה צמחי נוי, צמחי תבלין ומאכל וכדומה. גינה מתוכננת נכון מאפשרת עיצוב מושלם שייצור מקום לבילוי
+            והנאה מרובה.
+        </p>
+        <hr>
+    </div>
+    <div id="i1" class="big_img" style="background-image: url(../../Images/Garden/01.jpg);">
+        <div class="title">
+            <div class="number">
+                01
+            </div>
+            בדיקת שטח יסודית
+            <p>
+                לפני שמתחילים בעיצוב גינה, תערכו בדיקת שטח יסודית. קחו בחשבון גורמים כמו גודל וצורת הגינה, חשיפה לשמש,
+                סוג הקרקע, ניקוז, עצים קיימים או כל גורם אחר אותו רוצים להעלים או לשלב אותו בגינה.
+            </p>
+        </div>
+    </div>
+    <div class="scroll">
+        <div class="span"></div>
+        <div class="text">
+            <div class="line left">
+                <div class="divimg ">
+                    <img class="left" src="../../Images/Garden/01-1.jpg" />
+                </div>
+                <div class="issue">
+                    מידות הגינה
+                    <p>
+                        במדידת שטח הגינה. מתחילים בצורתו של השטח אם הוא מלבן, או ריבוע במידות אורך ורוחב שוות או שצורתו
+                        אינה אחידה. אם צורתה של הגינה אחידה מודדים אורך ורוחב מכפילים זה בזה מקבלים את שטח הגינה, שממנו
+                        יש להפחית אלמנטים בנויים. תרשים סכמתי של שטח הגינה יועיל לאחר מכן בהקצעת מקום לאלמנטים שונים
+                        בגינה. אם צורת הגינה לא אחידה מודדים כל שטח הנפרד ומחברים.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/01-2.jpg" />
+                </div>
+                <div class="issue">
+                    חשיפה לשמש
+                    <p>
+                        יש לתצפת על תנועת השמש לאורך היום כדי לקבוע את האזורים של שמש מלאה, צל חלקי וצל מלא. לצמחים
+                        שונים דרישות אור שמש שונות, ולכן הבנת החשיפה לשמש חיונית לבחירת הצמח המתאים.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg ">
+                    <img class="left" src="../../Images/Garden/01-3.jpg" />
+                </div>
+                <div class="issue">
+                    רוח
+                    <p>
+                        שימו לב למשטר הרוח בגינה. יש אזורים שחשופים יותר לרוחות, בעוד שאחרים עשויים להיות מוגנים, אם
+                        בזכות מיקום הגינה או מבנה שחוסם את עוצמת הרוח.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/01-4.jpg" />
+                </div>
+                <div class="issue">
+                    סוג אדמה וחלחול
+                    <p>
+                        את סוג הקרקע כדאי ומומלץ לבדוק בעומקים ובמקומות שונים בגינה כי עשוי להיות שבגינה כמה סוגים של
+                        אדמה, בין אם זו אדמה חולית, חרסית, אדמת חמרה, אדמה שחורה וכדומה. בנוסף, חשוב לבדוק את מצב חלחול
+                        המים לאחר גשם או השקיה. תנאי הקרקע הם גורם משפיע על הצמיחה.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg ">
+                    <img class="left" src="../../Images/Garden/01-5.jpg" />
+                </div>
+                <div class="issue">
+                    מקורות מים וניקוז
+                    <p>
+                        לבדוק מה הם מקורות המים הזמינים להשקיה, ברזים, טפטפות, וממטרות. כמו כן יש לבדוק את מבנה השטח
+                        כשהוא מותאם לניקוז המים. על ידי כך נמנע מגשמים להציף את הגינה, או לגרום לסחף שיהרוס את הגינה.
+                        לכן, למים חייבת להימצא דרך ניקוז.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span"></div>
+    <div id="i2" class="big_img" style="background-image: url(../../Images/Garden/02.jpg);">
+        <div class="title">
+            <div class="number">
+                02
+            </div>
+            סגנונות גינה
+            <p>
+                ישנם סגנונות גינה רבים, כל אחד עם מאפיינים ואלמנטים עיצוביים ייחודיים משלו. בחירת סגנון הגן תלויה
+                בהעדפות האישיות, בנוף שמסביב, בצריכת המים ובמידת האחזקה הנדרשת. לפניכם כמה סגנונות גינה פופולריים
+            </p>
+        </div>
+    </div>
+    <div class="scroll">
+        <div class="span"></div>
+        <div class="text">
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/02-1.jpg" />
+                </div>
+                <div class="issue">
+                    גן עם צמחיה מעוצבת
+                    <p>
+                        עיצוב צמחים מתאפיין בקווים סימטריים וגיאומטריים. לעתים קרובות הם כוללים קווים ישרים, קטעים
+                        מוגדרים של צבעוניות אחידה בצורות מדויקות וגדר חיה מטופחת היטב. גנים בהם הצמחייה מעוצבת הם
+                        אלגנטיים ומעודנים. בגנים מהסוג הזה נהוג גם להוסיף מזרקות, פסלים ובריכות נוי.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/02-2.jpg" />
+                </div>
+                <div class="issue">
+                    גן יפני
+                    <p>
+                        גנים יפניים יוצרים סביבה שלווה והרמונית. לעתים קרובות הם משלבים אלמנטים כמו: משטחי חול מגורפים,
+                        בריכות מים, פנסי אבן, גשרים, עצים ושיחים גזומים בקפידה. הגנים היפניים ידועים בתחושת השלווה
+                        השוררת בהם.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/02-3.jpg" />
+                </div>
+                <div class="issue">
+                    גן ים תיכוני
+                    <p>
+                        בגנים הים תיכוניים אותם ניתן למצוא במדינות השוכנות לחופי הים התיכון, הצמחייה מותאמת לאקלים חם
+                        ושטוף שמש. עצי זית, ברוש ואורנים, שיחי לבנדר, רוזמרין ודומיהם, הם המרכיבים הנפוצים בגנים ים
+                        תיכוניים.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/02-4.jpg" />
+                </div>
+                <div class="issue">
+                    גן טרופי
+                    <p>
+                        גנים טרופיים, מצטיינים בעלווה שופעת של שרכים, צבעים מרהיבים ותחושה של אקזוטיות. הם כוללים בדרך
+                        כלל מגוון של עצי דקל, פרחים טרופיים וצמחי עלים נועזים. גנים טרופיים משגשגים באקלים חם ולח.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/02-5.jpg" />
+                </div>
+                <div class="issue">
+                    גן מודרני או עכשווי
+                    <p>
+                        לגנים מודרניים יש קווים נקיים, מאפיינים מינימליסטיים והתמקדות באלמנטים אדריכליים. לעתים קרובות
+                        הם משלבים חומרים בטון, פלדה וזכוכית, ויוצרים מראה מלוטש ומתוחכם.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/02-6.jpg" />
+                </div>
+                <div class="issue">
+                    גן סלעים
+                    <p>
+                        בגינות המבוססות על מסלעות למעשה יוצרים שילוב בין סלעים וצמחייה. לעתים קרובות גן סלעים עשוי
+                        להתאים למקומות בהם שוררים תנאי קרקע פחות טובים לגידולי צמחים.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/02-7.jpg" />
+                </div>
+                <div class="issue">
+                    גן גג
+                    <p>
+                        גינות גג מעוצבות על גגות בניין. גינות הגג יכולות להיות מבוססות על מכלי שתילה גדולים, כמו: חביות,
+                        אדניות בנויות או ניידות עשויות מחומרים שונים. ו/או גינות אנכיות, המכונות קירות ירוקים, שבאמצעותם
+                        ניתן לנצל את שטח הקירות סביב גינת הגג.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/02-8.jpg" />
+                </div>
+                <div class="issue">
+                    גן פירות, ירקות וצמחי תבלין
+                    <p>
+                        בגינות ביתיות אפשר לשלב בין צמחי נוי וצמחים מיועדים לאכילה. ואפשר לתכנן את כל הגינה רק למטרת
+                        גידול עצים וצמחים של פירות, ירקות, וצמחי תבלין.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span"></div>
+    <div id="i3" class="big_img" style="background-image: url(../../Images/Garden/03.jpg);">
+        <div class="title">
+            <div class="number">03</div>
+            בחירת צמחים
+            <p>
+                אחרי בדיקת סוג הקרקע, שעות וכיוון אור השמש והניקוז, הגיע שלב בחירת הצמחים. בהתאם לתנאים שנמצאו, נבחרים
+                הסוגים המתאימים. ליצירת נוף מרהיב הכולל בין היתר גם שילובי צבעים, חייבים לדעת מראש לאיזה גובה ורוחב
+                הצמחים יגיעו בבגרותם, מתי מתרחשת עונת הפריחה שלהם והאם הם רב שנתיים או עונתיים.
+            </p>
+        </div>
+    </div>
+    <div class="scroll">
+        <div class="span"></div>
+        <div class="text">
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/03-1.jpg" />
+                </div>
+                <div class="issue">
+                    סוגי צמחים
+                    <p>
+
+                        לפני שמגיעים למשתלה כדי לקבל החלטה אילו סוגי צמחים מועדפים עליכם, כגון: רב שנתיים שאין צורך
+                        להחליף אותם בכל עונה, או עונתיים, שלרוב הם הצמחים הפרחוניים, האם אתם מעדיפים נוף של שיחים
+                        נמוכים, או עצים, גדר חיה, ועד כמה חשובה לכם רמת האחזקה של הגינה.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/03-2.jpg" />
+                </div>
+                <div class="issue">
+                    סגנונות גינה
+
+                    <p>
+                        הצמחים הם אלה שיקבעו בסופו של דבר את סגנון העיצוב של הגינה. יש לבחור צמחים שהשילוב ביניהם, אם זה
+                        מבחינת הגוונים שלהם, הגובה והשטח שהם תופשים יהוו מראה מושלם שיקנה לגינה מראה הומוגני.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/03-3.jpg" />
+                </div>
+
+                <div class="issue">
+                    תוכנית שתילה
+                    <p>
+                        לפני רכישת צמחים, יש לחלק את שטח הגינה בתוכנית שתילה. כולל המרווחים בין שתיל לשתיל ובין סוגים
+                        שונים של צמחים. כדאי לקבץ יחד צמחים בעלי צרכים דומים של מים ואור.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/03-4.jpg" />
+                </div>
+                <div class="issue">
+                    גיוון
+                    <p>
+                        ליצירת עניין בגינה לאורך כל השנה, כדאי לבחור צמחים עם צבעים, מרקמים, גבהים וזמני לבלוב ופריחה
+                        שונים
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/03-3.jpg" />
+                </div>
+                <div class="issue">
+                    צמחים מקומיים ומסתגלים
+                    <p>
+                        כדאי להשתמש בצמחים מקומיים או כאלה המותאמים היטב לאזור הגינה. צמחים מקומיים נוטים להיות עמידים
+                        יותר, דורשים פחות תחזוקה ותומכים במערכות אקולוגיות מקומיות.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/03-4.jpg" />
+                </div>
+                <div class="issue">
+                    איזון ופרופורציה
+                    <p>
+                        ליצירת פרופורציה נכונה בגינה, חשוב לאזן בין צמחים גבוהים, בינוניים ונמוכים, לצורך כך יש לקחת
+                        בחשבון את הגודל הבוגר של הצמחים אותם תבחרו לגינה.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/03-3.jpg" />
+                </div>
+                <div class="issue">
+                    עונות
+                    <p>
+                        הקסם שטמון בעיצוב גינה הוא גורם ההתחדשות בכל עונה. כשמעצבים גינה כדאי לחשוב על כל אחת מהעונות.
+                        שילוב של צמחים עונתיים עם זמני פריחה שונים, לצד עצים ושיחים ירוקי עד, בתוספת דשא ו/או שיחים
+                        זוחלים צמודים לקרקע יבטיחו את יופייה של הגינה לאורך כל השנה.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span"></div>
+    <div id="i4" class="big_img" style="background-image: url(../../Images/Garden/04.jpg);">
+
+        <div class="title">
+            <div class="number">04</div>
+            תאורה לגינה
+            <p>
+                עיצוב הגינה משתנה בצורה משמעותית בין היום והלילה. תאורת גינה מעוצבת כהלכה יוצרת אווירה מזמינה, מאפשרת
+                הנאה מהגינה גם בלילה ומדגישה מאפיינים מרכזיים. מעבר לכך לתאורה בגינה יש גם היבט בטיחותי ופונקציונלי.
+                גינה חשוכה או לא מוארת מספיק מאבדת מיופייה ולא בטוחה לתנועה.
+            </p>
+        </div>
+    </div>
+    <div class="scroll">
+        <div class="span"></div>
+        <div class="text">
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/04-1.jpg" />
+                </div>
+                <div class="issue">
+                    אור שבילים
+                    <p>
+                        בין גושי הצמחים, בין פינות שונות בגינה, בכניסה ובגישה למבנים, משולבים בגינה שבילים. אלה חייבים
+                        להיות מוארים הן מבחינת יופייה של הגינה ובעיקר מטעמי בטיחות והכוונת תנועה בחשיכה.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/04-2.jpg" />
+                </div>
+                <div class="issue">
+                    זרקורים
+                    <p>
+                        זרקורים (אפ לייט) אלה משמשים להדגשת מאפייני גן ספציפיים, כגון עצים, פסלים או אלמנטים אדריכליים.
+                        אפ לייט מותקנים על הקרקע והאור שלהם מכוון כלפי מעלה. דאון לייט הם גופים המורכבים בגובה ומאירים
+                        כלפי מטה. אלה יוצרים ריכוזי אור על הקרקע, הצמחייה שעליה, שבילים או משטחים.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/04-3.jpg" />
+                </div>
+                <div class="issue">
+                    אורות מחרוזת (גרלנדה)
+                    <p>
+                        אורות מחרוזת מוסיפים אווירה חגיגית וקסומה לגינה, אפשר לשלב אותם בפרגולה, בין ענפי העצים, על קיר
+                        הבית או על הגדר.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/04-4.jpg" />
+                </div>
+                <div class="issue">
+                    תאורת מדרגה
+                    <p>
+                        אם יש מדרגות בגינה חשוב מאוד להאיר את מדרכי המדרגות, זה נכון הן מבחינה בטיחותית והן מבחינת יופי.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/04-5.jpg" />
+                </div>
+                <div class="issue">
+                    אורות מתחת למים
+                    <p>
+                        אורות בתוך בריכת השחייה או בריכת הדגים יוצרים אפקט מרהיב ושובה לב.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/04-6.jpg" />
+                </div>
+                <div class="issue">
+                    תאורה שכבתית
+                    <p>
+                        תכנית תאורת גינה מעוצבת היטב משלבת מספר שכבות של אור. אור שמציף את כל שטח הגינה, אורות שמדגישים
+                        אלמנטים מסוימים ואורות השבילים והמעברים, החיבור בין כל שכבות האור יוצרים עומק ויזואלי ועניין רב.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/04-7.jpg" />
+                </div>
+                <div class="issue">
+                    אזורי תאורה
+                    <p>
+                        חשוב שתהיה שליטה על התאורה בגינה אם היא מחולקת לאזורים. לדוגמה: אזור משחקים, אירוח, סביב הבריכה
+                        ובתוכה, אזור התרגעות ובנוסף תאורת הדגשת אלמנטים מסוימים. תבטיחו לכם אפשרות לבחור בין הארת הגינה
+                        כולה או רק חלקים ממנה.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/04-8.jpg" />
+                </div>
+                <div class="issue">
+                    עמידות בפני מזג אוויר
+                    <p>
+                        מבחינה בטיחותית, בגינה מושקת ומטופחת יש לחות תמידית, לכן, חשוב לבחור בגופי תאורה המיועדים לשימוש
+                        חיצוני ויכולים לעמוד בפני לחות, מים ולהיות גם עמידים בתנאי מזג אוויר שונים.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/04-9.jpg" />
+                </div>
+                <div class="issue">
+                    תאורה סמויה
+                    <p>
+                        שילוב גופי תאורה סמויים כשהם חבויים בתוך הצמחייה או אלמנטים עיצוביים המשולבים בגינה, יעניקו
+                        למראה הלילי של הגינה נופך דרמטי מלא יופי שיגרום להתפעלות.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span"></div>
+    <div id="i5" class="big_img" style="background-image: url(../../Images/Garden/05.jpg);">
+
+        <div class="title">
+            <div class="number">
+                05
+            </div>
+            תחזוקת הגינה
+            <p>
+                קחו בחשבון את רמת התחזוקה שתידרש בהתאם לעיצוב הגינה שתבחרו. רמת התחזוקה נקבעת ברובה לפי הצמחים שיבחרו על
+                ידכם. בכל מקרה, בין אם העדפתם גינה בתחזוקה נמוכה ובין אם יש לכם נכונות להשקיע זמן ומאמץ בתחזוקת הגינה.
+                שמירה על יופייה של גינה מחייב טיפול שוטף ותשומת לב , זאת כמובן אחרי שנעשה תכנון נכון ומתחשב ברצונות
+                ובנכונות שלכם.
+            </p>
+        </div>
+    </div>
+    <div class="scroll">
+        <div class="span"></div>
+        <div class="text">
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/05-1.jpg" />
+                </div>
+                <div class="issue">
+                    בחירת צמחים
+                    <p>
+                        להבטחת גינה שתראה במיטבה כל השנה מבלי להשקיע יותר מדי עבודה, כדאי לבחור בצמחים שמתאימים היטב
+                        לאקלים בו נמצאת גינה, לסוג הקרקע לצורת ההשקיה וכמות האור שנדרשת. מבחינת מראה כדאי לשלב צמחי עד
+                        ונשירים כדי להבטיח עניין לאורך כל השנה, שמשתנה בהתאם לעונה.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/05-2.jpg" />
+                </div>
+                <div class="issue">
+                    גיזום
+                    <p>
+                        יש לגזום את הצמחים באופן קבוע כדי לשמור על צורתם, לעודד צמיחה בריאה ולמנוע צפיפות. גם הסרת ענפים
+                        מתים או חולים מקדמת גם את בריאות הצמח.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/05-3.jpg" />
+                </div>
+                <div class="issue">
+                    השקיה
+                    <p>
+                        חשוב מאוד לדאוג למערכת השקיה מתוכנתת שתבצע השקיה עקבית. מערכת השקיה יעילה ומתוכנתת תבטיח שהצמחים
+                        יקבלו את כמות המים הנכונה ללא בזבוז.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/05-4.jpg" />
+                </div>
+                <div class="issue">
+                    הדברת עשבים
+                    <p>
+                        יש לעקור באופן קבוע עשבים שוטים כדי למנוע מהם להתחרות עם צמחי הגינה על חומרים מזינים ומים. חיטוי
+                        יכול גם לעזור לדיכוי צמיחת העשבים.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/05-5.jpg" />
+                </div>
+                <div class="issue">
+                    דישון
+                    <p>
+                        שימוש בדשנים מתאימים כדי לספק חומרים מזינים חיוניים לצמחים.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/05-6.jpg" />
+                </div>
+                <div class="issue">
+                    מעקב אחר מזיקים ומחלות
+                    <p>
+                        יש לבדוק סימנים של מזיקים ומחלות בגינה. גילוי מוקדם ופעולה מהירה יכולים למנוע התפשטות של בעיות
+                        וקמילה של צמחים.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/05-7.jpg" />
+                </div>
+                <div class="issue">
+                    שתילה ותחזוקה עונתיים
+                    <p>
+                        שתילה עונתית בגינה תגרום להחלפת צמחים חד-שנתיים והוספת צמחים עונתיים כך תשיגו גינה שנראית רעננה
+                        ומזמינה לאורך כל השנה
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="divimg">
+                    <img class="left" src="../../Images/Garden/05-8.jpg" />
+                </div>
+                <div class="issue">
+                    דילול וחלוקה
+                    <p>
+                        לצמחים מסוימים נדרש לעשות דילול מידי פעם, הדילול מונע צפיפות ומעניק לצמחים אפשרות של צמיחה
+                        מחודשת ורעננה.
+                    </p>
+                </div>
+            </div>
+            <div class="line left">
+                <div class="divimg">
+                    <img class="right" src="../../Images/Garden/05-9.jpg" />
+                </div>
+                <div class="issue">
+                    ניקוי
+                    <p>
+                        אחד מהדברים החשובים בשמירה על יופייה של הגינה, הוא הניקיון, בגינה מצטברים עלים שנשרו, זרדים
+                        ועוד. ניקיון קבוע של הגינה ישמור על המראה האסתטי שלה ויגביר את יופייה.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span"></div>
+    <footer id="Footer">
+        <nav>
+            <div class="menu">
+                עיצוב חללים
+                <ul>
+                    <li><a href="../Spaces/LivingRoom.html" target="frame">סלון</a></li>
+                    <li><a href="../Spaces/FoodCorner.html" target="frame">פינת אוכל</a></li>
+                    <li><a href="../Spaces/WorkRoom.html" target="frame">חדר עבודה</a></li>
+                    <li><a href="../Spaces/BedRoom.html" target="frame">חדר שינה</a></li>
+                    <li><a href="../Spaces/Kitchen.html" target="frame" class="fa-solid fa-couch">מטבח</a></li>
+                    <li><a href="../Spaces/Entery.html" target="frame">מבואת כניסה</a></li>
+                    <li><a href="../Spaces/Porch.html" target="frame">מרפסת</a></li>
+                    <li><a href="../Spaces/ChildrenRoom.html" target="frame">חדר ילדים</a></li>
+                    <li><a href="../Spaces/Bathroom.html" target="frame">חדר רחצה</a></li>
+                </ul>
+            </div>
+            <div class="menu">סגנונות עיצוב
+                <ul>
+                    <li><a href="../StylesDesign/Akelakty.html" target="frame">סגנון אקלקטי</a></li>
+                    <li><a href="../StylesDesign/Etny.html" target="frame">סגנון אתני</a></li>
+                    <li><a href="../StylesDesign/Woby-Subi.html" target="frame">סגנון וואבי סאבי</a></li>
+                    <li><a href="../StylesDesign/Vintaz.html" target="frame">סגנון וינטז'</a></li>
+                    <li><a href="../StylesDesign/Tuskani.html" target="frame">סגנון טוסקני</a></li>
+                    <li><a href="../StylesDesign/Vilage.html" target="frame">סגנון כפרי</a></li>
+                    <li><a href="../StylesDesign/Modern.html" target="frame">סגנון מודרני</a></li>
+                    <li><a href="../StylesDesign/Nurdi.html" target="frame">סגנון נורדי</a></li>
+                    <li><a href="../StylesDesign/Provance.html" target="frame">סגנון פרובנס</a></li>
+                    <li><a href="../StylesDesign/Clasic.html" target="frame">סגנון קלאסי</a></li>
+                    <li><a href="../StylesDesign/Retro.html" target="frame">סגנון רטרו</a></li>
+                    <li><a href="../StylesDesign/Industrial.html" target="frame">סגנון תעשייתי</a></li>
+                </ul>
+            </div>
+            <div class="menu">חפצים
+                <ul>
+                    <li><a href="../Products/Fridge.html" target="frame">מקרר</a></li>
+                    <li><a href="../Products/Stove.html" target="frame">כיריים</a></li>
+                    <li><a href="../Products/Rug.html" target="frame">שטיחים</a></li>
+                    <li><a href="../Products/Sofa.html" target="frame">ספות</a></li>
+                </ul>
+            </div>
+            <div class="menu">עוד
+                <ul>
+                    <li><a href="../More/Colors.html" target="frame">בחירת הצבע המושלם</a></li>
+                    <li><a href="../More/Pool.html" target="frame">בניית בריכה בבית</a></li>
+                    <li><a href="../More/Garden.html" target="frame">עיצוב גינה</a></li>
+                    <li><a href="../More/RentApartment.html" target="frame">עיצוב דירה שכורה</a></li>
+                    <li><a href="../More/ADHD.html" target="frame">עיצוב חדר לילד עם ADHD </a></li>
+                    <li><a href="../More/DIY.html" target="frame">עשה זאת בעצמך</a></li>
+                    <li><a href="../More/Tips.html" target="frame">טיפים שונים</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

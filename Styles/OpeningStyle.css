@@ -1,0 +1,257 @@
+.line{
+
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    transform: translateX(27px);
+}
+video {
+
+    align-self: center;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    animation: zoomIn 4s 3.5s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    100% {
+        transform: scale(0.9); 
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow-x: hidden; 
+    align-items: center;
+    font-family: 'MyFont';
+}
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.recipe-card {
+    background-color: #efe4da;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: calc(33.33% - 30px); /* Adjusted for responsiveness */
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#Guides{
+    width: 20%;
+    background-color: rgb(241 211 154) ;
+    margin: 30rem;
+    border-radius: 20rem;
+    font-size: 30rem;
+    padding: 10rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family:"MyFont" ;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    border-bottom: black 2rem solid;
+    border-top: black 2rem solid;
+    height: 100%;
+    }
+    footer nav{
+        border-bottom: none;
+        background-color: rgb(248, 241, 228);
+        align-items: start;
+    }
+    .menu{
+        font-weight: 500;
+        font-size: 20rem;
+        color: black;
+        text-align: center;
+        align-content: center;
+        padding: 1rem;
+        position: relative; 
+        justify-items: center;
+        margin: -1rem;
+        transition: transform 0.2s 0s linear;
+    }
+    .menu:hover .dropdawn,.menu:hover #bigTriangle{
+        display: block; 
+    }
+    .menu:hover a:not(li a),footer .menu:hover{
+        color: #714b00;
+        font-size: larger;
+        /* transform: translateY(-10px); */
+    }
+    li a:hover{
+        color: #cd972f;
+    }
+    ul{
+        padding-right: 10rem;
+        padding-left: 10rem;
+        font-weight: normal;
+        font-size: 18rem;
+        width: max-content;
+        list-style: none;
+        text-align: center;
+        position: static;
+        border-top: black 2rem solid;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .menu:hover a:not(li a),footer .menu:hover{
+        color: #714b00;
+        font-size: larger;
+        /* transform: translateY(-10px); */
+    }
+    .menu:hover .dropdawn,.menu:hover #bigTriangle{
+        display: block; 
+    }
+    footer{
+        bottom: 0;
+        width: 100%;
+        font-size: 20rem;
+        color: black;
+        background-color: rgb(248, 241, 228);
+        padding: 30rem;
+        padding-top: 0;
+        /* position: sticky;
+        bottom: 0; */
+        }
+        footer a{
+            z-index: 1;
+        }        
+    
+         
+@font-face {
+    font-family: "MyFont"; /* שם הפונט המותאם אישית */
+    src: url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff2"),
+         url("../Fonts/Hebbo/Heebo-Regular.ttf") format("woff");
+}
+@media (max-width:499px)
+{
+    html{
+        font-size: 0.55px;
+        width: 0.55px;
+        height: 0.55px;
+        padding: 0.55px;
+        margin: 0.55px;
+        box-shadow: 0.55px;
+        border-width: 0.55px;
+    }
+    body{
+        overflow-Y: scroll;
+
+    }
+    .line{
+        flex-direction: column;
+
+    }
+    video{
+        width:400px ;
+        height:auto ;
+    }
+
+}
+@media (max-width:767px) and (min-width:500px)
+{
+    html{
+        font-size: 0.7px;
+        width: 0.7px;
+        height: 0.7px;
+        padding: 0.7px;
+        margin: 0.7px;
+        box-shadow: 0.7px;
+        border-width: 0.7px;
+    }
+    body{
+        overflow-Y: scroll;
+
+    }
+    .line{
+        flex-direction: column;
+
+    }
+    video{
+        width:550px ;
+        height:auto ;
+    }
+
+
+
+} 
+@media (max-width:991px)and (min-width:768px)
+{
+    html{
+        font-size:0.7px;
+        width:0.76px;
+        height:0.76px;
+        padding:0.76px;
+        margin:0.76px;
+        box-shadow:0.76px;
+        border-width:0.76px;
+    }
+    video{
+        width:550px ;
+        height:auto ;
+    }
+
+}
+
+@media (max-width:1500px)and (min-width:992px)
+{
+    html{
+        font-size: 0.9px;
+        width: 0.9px;
+        height: 0.9px;
+        padding: 0.9px;
+        margin: 0.9px;
+        box-shadow: 0.9px;
+        border-width: 0.9px;
+    
+    }
+    video{
+        width:650px ;
+        height:auto ;
+    }
+
+}
+ @media (min-width:1500px)
+{
+    html{
+        font-size: 1px;
+        width: 1px;
+        height: 1px;
+        padding: 1px;
+        margin: 1px;
+        box-shadow: 1px;
+        border-width: 1px;
+    }
+    video{
+        width:1200px ;
+        height:auto ;
+    }
+
+}  
